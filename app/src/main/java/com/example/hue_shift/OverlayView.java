@@ -10,10 +10,10 @@ public class OverlayView extends View {
     private int filterColor;
     private final Paint paint;
 
-    public OverlayView(Context context, int initalIntensity) {
+    public OverlayView(Context context, int initialIntensity) {
         super(context);
         paint = new Paint();
-        setFilterIntensity(initalIntensity);
+        setFilterIntensity(initialIntensity);
     }
 
     private void setFilterIntensity(int intensity) {
