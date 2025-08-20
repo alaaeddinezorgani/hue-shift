@@ -16,7 +16,7 @@ public class OverlayView extends View {
         setFilterIntensity(initialIntensity);
     }
 
-    private void setFilterIntensity(int intensity) {
+    protected void setFilterIntensity(int intensity) {
         // slider's 0-100 to alpha 0-255
         int alpha = (int) (intensity * 2.55);
         filterColor = Color.argb(alpha, 255, 85, 0);
